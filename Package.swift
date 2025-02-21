@@ -53,6 +53,7 @@ let package = Package(
             ],
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
+                .unsafeFlags(["-enable-library-evolution"])
             ]
         ),
         .target(
@@ -72,6 +73,7 @@ let package = Package(
             ],
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
+                .unsafeFlags(["-enable-library-evolution"])
             ]
         ),
         .target(
@@ -89,6 +91,7 @@ let package = Package(
             ],
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
+                .unsafeFlags(["-enable-library-evolution"])
             ]
         ),
         .target(
@@ -103,6 +106,9 @@ let package = Package(
             path: "Libraries/Embedders",
             exclude: [
                 "README.md"
+            ],
+            swiftSettings: [
+                .unsafeFlags(["-enable-library-evolution"])
             ]
         ),
         .target(
@@ -122,6 +128,7 @@ let package = Package(
             ],
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
+                .unsafeFlags(["-enable-library-evolution"])
             ]
         ),
         .target(
@@ -138,6 +145,7 @@ let package = Package(
             ],
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
+                .unsafeFlags(["-enable-library-evolution"])
             ]
         ),
     ]
